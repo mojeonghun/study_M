@@ -5,21 +5,25 @@
     <title>Document</title>
 </head>
 <body>
-<!-- <form>으로 영역을 잡아줘야 초기화 or 제출 가능해진다. -->
-
-
+<!-- <form>으로 영역을 잡아줘야 초기화 or 제출 가능해진다.그리고 block 이다 -->
+<!-- <fieldset>은 block 이고 <legend>태그가 필수로 따라온다. 네모칸이 쳐진다.-->
+<!-- <label>은 inline 이고  for가 있어야 하며 id를 입력하는 데
+         input 부분에 id가 등록되어있어야 가능하다.-->
 
 <form action="member.html" method="get">
 <fieldset>
     <legend>필수항목</legend>
 
     <ul>
-        <li>아이디:<input type="text" value="아이디" name="userid"></li>
-        <li>비밀번호:<input type="password" value="뭐라고 적든간에" name="userpw"></li>
+        <li><label for="userId">아이디:</label>
+            <input type="text" id="userId" value="아이디" name="userid"></li>
+        <li><label for="userPw">비밀번호:</label><input type="password" id="userPw" value="뭐라고 적든간에" name="userpw"></li>
         <li>이메일:<input type="text" name="useremail" ></li>
-        <li>성별:
-            <input type="radio" name="sex" checked="checked">남자
-            <input type="radio" name="sex" >여자
+        <li><label for="man">성별:</label>
+            <input type="radio" name="sex" checked="checked" id="man">
+            <label for="man">남자</label>
+            <input type="radio" name="sex" id="woman">
+            <label for="woman">여자</label>
         </li>
         <li>취미:
             <input name="option1" type="checkbox"checked="checked">영화감상
