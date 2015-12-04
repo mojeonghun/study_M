@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- 테이블사용시 table 태그를 사용하여 엘리먼트를 구성해야한다.
+구성요소중
+tr은 행을 이야기하고
+td는 열을 이야기한다. -->
+
+<!--
+테이블 영역
+thead : 테이블의 머릿글 -필수사항은 아님.
+tbody : 테이블의 컨텐츠 - 꼭 들어가야하는 필수사항
+tfoot : 테이블의 합산정보 - 필수사항이 아님.
+        - tfoot의 위치는 thead와 tbody 사이에 넣는다.
+          이유는 리딩기에서 나올 때 결과부터 말해줘야 장애인분들이 좋다.
+caption : 표에 대한 제목 h$ 관련태그와는 의미가 다르다.
+summary : 현재 표의 자세한 설명 (table 태그 안에 사용)
+colgruop : 테이블 아이템. 즉 열의 넓이에 대한 디자인값을 넣을 때 사용.
+           구성요소로는 빈태그 형식의 col 을 사용.
+           col의 속성으로는 style="" width="" 등을 사용하여 디자인 조절.
+
+-->
+
+
+<table border="1" width="100%" summary="자세한설명">
+    <caption>게시판</caption>
+
+    <colgruop>
+        <col width="100%">
+        <col width="300%">
+        <col />
+        <col />
+    </colgruop>
+
+     <thead>
+     <tr>
+         <td width="100%">번호</td>
+         <td>제목</td>
+         <td width="300%">작성자</td>
+         <td>작성일</td>
+     </tr>
+     </thead>
+
+     <tfoot>
+     <tr>
+         <td>item</td>
+         <td>item</td>
+         <td>item</td>
+         <td>item</td>
+     </tr>
+     </tfoot>
+
+     <tbody>
+     <tr>
+         <td>item</td>
+         <td>item</td>
+         <td>item</td>
+         <td>item</td>
+     </tr>
+     <tbody>
+
+
+ </table>
+
+
+
+
+
+
+
+
+</body>
+</html>
